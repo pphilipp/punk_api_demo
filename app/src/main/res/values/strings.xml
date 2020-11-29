@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Beer Challenge</string>
     <string name="avp">avp : %s</string>
-    <string name="format_avp">Alcohol by volume (avp) : %s</string>
+    <string name="format_avp">AVP: %s</string>
     <string name="ingredients">Ingredients</string>
     <string name="amount_emoji">🔢</string>
     <string name="add_emoji">➕</string>
