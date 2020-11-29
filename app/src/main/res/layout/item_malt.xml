@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.brewdog.beer.challenge.data.model.Malt" />
+
+    </data>
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/extra_small"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/blue_200">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/malt_rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small"
+            android:text="@{String.format(@string/format_malt, item.name, item.amount.value, item.amount.unit)}"
+            tools:text="@string/format_malt" />
+
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+</layout>

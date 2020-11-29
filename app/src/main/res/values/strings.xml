@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Beer Challenge</string>
+    <string name="avp">avp : %s</string>
+    <string name="format_avp">Alcohol by volume (avp) : %s</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="amount_emoji">🔢</string>
+    <string name="add_emoji">➕</string>
+    <string name="attribute_emoji">ℹ️</string>
+    <string name="format_hop">%s - %s️</string>
+    <string name="method">Method</string>
+    <string name="format_fermentation">Fermentation: 🌡 %s %s </string>
+    <string name="format_mash_temp">⏳%s 🌡 %s %s </string>
+    <string name="format_malt">🟠 %s 🔸 %s %s</string>
+    <string name="splash_title">🍺 PUNK API 🍻</string>
+    <string name="splash_subtitle">🔷🔸 demo app 🔸🔷</string>
+    <string name="splash_author">by Philip Buhaievskyi</string>
+    <string name="splash_author_country">Developed with proud  in Ukraine 🇺🇦</string>
+
+
+</resources>

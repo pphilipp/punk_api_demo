@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.brewdog.beer.challenge.data.model.Beer" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ingredients_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/neutrals_300"
+            android:paddingStart="@dimen/small"
+            android:paddingTop="@dimen/extra_small"
+            android:paddingBottom="@dimen/extra_small"
+            android:text="@string/ingredients"
+            android:textSize="@dimen/h3_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hops_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ingredients_title_tv"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_hop" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/malt_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/extra_small"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hops_rv"
+            tools:itemCount="1"
+            tools:listitem="@layout/item_malt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

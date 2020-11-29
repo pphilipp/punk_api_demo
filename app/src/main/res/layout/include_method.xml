@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="item"
+            type="com.brewdog.beer.challenge.data.model.Beer" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/ingredients_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/method"
+            android:background="@color/neutrals_300"
+            android:textSize="@dimen/h3_text_size"
+            android:textStyle="bold"
+            android:paddingStart="@dimen/small"
+            android:paddingTop="@dimen/extra_small"
+            android:paddingBottom="@dimen/extra_small"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlSymmetry" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mash_temp_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:listitem="@layout/item_mash_temp"
+            tools:itemCount="1"
+            app:layout_constraintTop_toBottomOf="@+id/ingredients_title_tv" />
+
+        <TextView
+            android:id="@+id/fermentation_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small"
+            android:layout_marginEnd="@dimen/small"
+            android:layout_marginTop="@dimen/extra_small"
+            android:text="@{String.format(@string/format_fermentation, item.method.fermentation.temp.value, item.method.fermentation.temp.unit)}"
+            android:textSize="@dimen/h3_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mash_temp_rv" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

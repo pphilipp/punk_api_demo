@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.brewdog.beer.challenge.data.model.Hop" />
+    </data>
+
+        <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:layout_width="@dimen/hop_card_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/extra_small"
+            android:layout_marginTop="@dimen/extra_small"
+            android:layout_marginEnd="@dimen/extra_small"
+            android:layout_marginBottom="@dimen/extra_small"
+            app:cardBackgroundColor="@color/yellow_200"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small">
+
+                <TextView
+                    android:id="@+id/hop_name_tv"
+                    style="@style/BaseTextStyleBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@{item.name}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@tools:sample/lorem" />
+
+                <TextView
+                    android:id="@+id/amount_tv"
+                    style="@style/BaseTextStyleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/amount_emoji"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hop_name_tv" />
+
+                <TextView
+                    android:id="@+id/amount_value_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@{String.format(@string/format_hop, item.amount.value, item.amount.unit)}"
+                    app:layout_constraintBottom_toBottomOf="@+id/amount_tv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/amount_tv"
+                    app:layout_constraintTop_toTopOf="@+id/amount_tv"
+                    tools:text="format here string" />
+
+                <TextView
+                    android:id="@+id/add_tv"
+                    style="@style/BaseTextStyleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/add_emoji"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/amount_tv" />
+
+                <TextView
+                    android:id="@+id/add_value_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@{item.add}"
+                    app:layout_constraintBottom_toBottomOf="@+id/add_tv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/add_tv"
+                    app:layout_constraintTop_toTopOf="@+id/add_tv" />
+
+                <TextView
+                    android:id="@+id/attribute_tv"
+                    style="@style/BaseTextStyleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/attribute_emoji"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/add_tv" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@{item.attribute}"
+                    app:layout_constraintBottom_toBottomOf="@+id/attribute_tv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/attribute_tv"
+                    app:layout_constraintTop_toTopOf="@+id/attribute_tv" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+</layout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Pallet-->
+    <color name="neutrals_800_opacity_40">#6625232C</color>
+    <color name="neutrals_800_opacity_15">#2625232C</color>
+    <color name="neutrals_800">#25232C</color>
+    <color name="neutrals_700">#4A4A4A</color>
+    <color name="neutrals_600">#696969</color>
+    <color name="neutrals_500">#9C9C9C</color>
+    <color name="neutrals_400">#D4D4D4</color>
+    <color name="neutrals_300">#EFEFEF</color>
+    <color name="neutrals_200">#FAFAFA</color>
+    <color name="neutrals_100">#FFFFFF</color>
+
+    <color name="orange_900">#561400</color>
+    <color name="orange_800">#972300</color>
+    <color name="orange_700">#CC370A</color>
+    <color name="orange_600">#E14F23</color>
+    <color name="orange_500">#F1663C</color>
+    <color name="orange_400">#FD8E6D</color>
+    <color name="orange_300">#FFBDA9</color>
+    <color name="orange_200">#FFE6DE</color>
+    <color name="orange_100">#FFF5F1</color>
+
+    <color name="red_700">#970721</color>
+    <color name="red_600">#B60B26</color>
+    <color name="red_500">#D1213D</color>
+    <color name="red_400">#DD5E66</color>
+    <color name="red_300">#F9BBB9</color>
+    <color name="red_200">#FFE1DF</color>
+
+    <color name="yellow_900">#654F00</color>
+    <color name="yellow_800">#856800</color>
+    <color name="yellow_700">#B58D00</color>
+    <color name="yellow_600">#CB9F05</color>
+    <color name="yellow_500">#E0B10A</color>
+    <color name="yellow_400">#E8C842</color>
+    <color name="yellow_300">#F1DC90</color>
+    <color name="yellow_200">#FCF3D2</color>
+    <color name="yellow_100">#FCF8EB</color>
+    <color name="yellow_header">#E9B913</color>
+    <color name="yellow_background">#F0C221</color>
+
+    <color name="green_900">#2F3600</color>
+    <color name="green_800">#434E00</color>
+    <color name="green_700">#667600</color>
+    <color name="green_600">#859A00</color>
+    <color name="green_500">#9DB504</color>
+    <color name="green_400">#B5C64D</color>
+    <color name="green_300">#E2EAAD</color>
+    <color name="green_200">#F1F6D5</color>
+    <color name="green_100">#F7FAE5</color>
+    <color name="green_nutri_score">#007F46</color>
+    <color name="light_green_nutri_score">#79BB43</color>
+    <color name="mustard_nutri_score">#F9C623</color>
+    <color name="orange_nutri_score">#E7792B</color>
+    <color name="red_nutri_score">#DC3E2A</color>
+
+    <color name="blue_700">#005E6A</color>
+    <color name="blue_600">#006F7D</color>
+    <color name="blue_500">#008596</color>
+    <color name="blue_400">#8FC7CF</color>
+    <color name="blue_300">#C3EAEF</color>
+    <color name="blue_200">#DAF0F3</color>
+    <color name="blue_header">#8FC7CF</color>
+    <color name="blue_background">#95D2DA</color>
+
+    <color name="pink_700">#C1123C</color>
+    <color name="pink_600">#D7204C</color>
+    <color name="pink_500">#E44D6A</color>
+    <color name="pink_400">#F996A9</color>
+    <color name="pink_300">#FFD8DF</color>
+    <color name="pink_200">#FFEDF0</color>
+    <!--END Pallet-->
+</resources>
